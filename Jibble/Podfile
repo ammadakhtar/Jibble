@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '15.0'
+
+target 'Jibble' do
+  # ignore all warnings from all pods
+  inhibit_all_warnings!
+  
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Jibble
+  pod 'RxSwift', '6.2.0'
+  pod 'RxCocoa', '6.2.0'
+end
+
+target 'JibbleTests' do
+  
+  pod 'Nimble'
+  pod 'RxTest'
+  pod 'RxBlocking'
+end
