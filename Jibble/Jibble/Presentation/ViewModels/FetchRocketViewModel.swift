@@ -21,7 +21,6 @@ final class FetchRocketViewModel {
     var rocketImage = BehaviorSubject<UIImage?>(value: UIImage(named: "placeholder_large_dark"))
     var rocketDescription = BehaviorSubject<String?>(value: "")
     let errorMessage: PublishSubject<String> = PublishSubject()
-    let rocket: PublishSubject<Rocket> = PublishSubject()
     private let disposeBag = DisposeBag()
     private var id = ""
 

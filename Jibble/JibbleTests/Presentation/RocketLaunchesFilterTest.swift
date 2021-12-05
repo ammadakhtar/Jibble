@@ -18,16 +18,7 @@ class RocketLaunchesFilterTest: XCTestCase {
         let rockets = MockDataGenerator().mockRocketLaunchesData()
         return rockets
     }()
-   
-//    class FetchSongsUseCaseMock: FetchSongsUseCaseProtocol {
-//        var expectation: XCTestExpectation?
-//        func execute(offSet: Int, page: Int, complete completion: @escaping (Result<[Song], Error>) -> Void) {
-//            let songs = SongListViewModelTests().songs
-//            let result: Result<[Song], Error> = .success(songs)
-//            completion(result)
-//        }
-//    }
-    
+       
     func testFiletrsLogic_WhenAYearIsChosen_ArrayShouldFilterToThatYear_Succeeds() {
         let repository = RocketsRepository(networkService: DefaultNetworkService())
         let useCase = FetchRocketsUseCase(rocketsRepository: repository)
